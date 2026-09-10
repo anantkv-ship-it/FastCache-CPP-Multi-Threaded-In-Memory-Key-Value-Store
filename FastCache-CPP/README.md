@@ -1,4 +1,4 @@
-# FastCache-CPP 🚀
+# FastCache-CPP 
 
 A C++17 multi-threaded in-memory key-value store exposed through a small TCP protocol. It demonstrates:
 
