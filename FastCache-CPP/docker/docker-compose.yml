@@ -1,0 +1,18 @@
+services:
+  fastcache:
+    build:
+      context: ..
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    volumes:
+      - ../data:/data
+    command:
+      - "--port"
+      - "8080"
+      - "--threads"
+      - "4"
+      - "--max-items"
+      - "100000"
+      - "--aof"
+      - "/data/appendonly.aof"
